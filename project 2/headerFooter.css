@@ -1,0 +1,135 @@
+:root {
+  --primary: #e5b9e7;
+  --primary-dark: #bf82c1;
+  --hover: #ff67f7;
+  --white: #ffffff;
+  --text: #dda3df;
+  --bg: #ffeffe;
+  --darkDark: #835279;
+  --footer: #a64d9e;
+  --header: white;
+}
+
+.dark-mode {
+  --bg: #000000;
+  --primary: #482b5f;
+  --primary-dark: #7c667c;
+  --accent: #41214b;
+  --white: #d6d6d6;
+  --text: #adadad;
+  --hover: #52116b;
+  --footer: #3c204e;
+  --header: #d6d6d6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: gravitas;
+  src: url(./fonts/Gravitas_One/GravitasOne-Regular.ttf);
+}
+header {
+  height: 15%;
+  background-color: var(--header);
+  border-radius: 10px;
+  border-top: 5px outset var(--primary);
+  border-bottom: 30px outset var(--primary);
+  border-left: 5px outset var(--primary);
+  border-right: 5px outset var(--primary);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  border: 5px dashed var(--primary);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-container img {
+  width: 50px;
+  height: 50px;
+}
+
+.logo-container h1 {
+  font-family: gravitas;
+  font-size: 25px;
+  color: var(--primary);
+}
+
+header p {
+  font-family: gravitas;
+  font-size: 20px;
+  color: var(--primary);
+}
+
+img {
+  position: relative;
+  z-index: 0;
+  transition: filter 0.3s ease;
+}
+
+.dark-mode img {
+  filter: brightness(0.7) contrast(1.1);
+}
+
+.signUp-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.signUp-container img {
+  width: 50px;
+  height: 50px;
+}
+
+.signUp-container button {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+button,
+.seat-num,
+.seat-button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover,
+.seat-num:hover,
+.seat-button:hover {
+  background: var(--hover);
+  transition: background-color 0.5s ease;
+}
+
+footer {
+  border: 5px dashed var(--primary);
+  padding: 60px;
+}
+
+footer p {
+  color: var(--footer);
+  font-family: gravitas;
+  font-size: 40px;
+}
+
+#mode-toggle {
+  padding: 10px !important;
+  width: 200px;
+  height: auto !important;
+}/*# sourceMappingURL=headerFooter.css.map */

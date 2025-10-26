@@ -1,0 +1,84 @@
+// === 🎨 GLOBAL COLOR SYSTEM === //
+:root {
+  --primary: #e5b9e7;
+  --primary-dark: #b382c1;
+  --hover: #ff67f7;
+  --white: #ffffff;
+  --text: #dda3df;
+  --bg: #ffeffe;
+  --darkDark: #835279;
+  --footer: #a64d9e;
+  --header: white;
+}
+
+.dark-mode {
+  --bg: #000000;
+  --primary: #482b5f;
+  --primary-dark: #7c667c;
+  --accent: #41214b;
+  --white: #e0e0e0;
+  --text: #adadad;
+  --hover: #542f5c;
+  --footer: #3c204e;
+  --header: #d6d6d6;
+}
+
+// === 🌈 PAGE STYLING === //
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+#trainTable {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-items: center;
+  padding: 100px;
+}
+
+.train-card {
+  display: flex;
+  gap: 100px;
+  background-color: var(--white);
+  color: var(--primary-dark);
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: background-color 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.train-actions {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+
+  button {
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    font-family: gravitas;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+}
+.avl-trains {
+  text-align: center;
+  padding-top: 50px;
+  color: var(--primary-dark);
+  font-family: gravitas;
+  font-size: 40px;
+  transition: color 0.3s ease;
+}

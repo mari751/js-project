@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./signUp.css" />
+    <link rel="stylesheet" href="./headerFooter.css" />
+  </head>
+  <body>
+    <header>
+        <div class="logo-container">
+            <img src="./images/train-track.png" alt="">
+            <h1>STEP-RAILWAY</h1>            
+        </div>
+        <p>Welcome To STEP-RAILWAY!</p>
+        <div class="signUp-container">
+          <button id="mode-toggle">Toggle Dark Mode</button>
+        </div>
+    </header>
+
+<main>
+  <div id="modal" class="modal hidden">
+  <div class="modal-content">
+    <h2 id="modal-message">Welcome! Please transfer to the main page.</h2>
+    <a href="index.html">
+      <button id="modal-button">Go to Main Page</button>
+    </a>
+  </div>
+</div>
+  <form action="" class="signup">
+    <h1>Please Sign Up To Enter</h1>
+    <div class="name-container">
+      <label for="signup-firsName">First Name
+        <input type="text" id="signup-firsName" placeholder="your name" name="firstName" />
+      </label>
+      <label for="signup-lastname">Last Name
+        <input type="text" id="signup-lastname" placeholder="your lastName" name="lastName" />
+      </label>
+    </div>
+    <label for="signup-age">Age
+      <input type="number" id="signup-age" placeholder="your age" name="age" />
+    </label>
+    <label for="signup-email">Email
+      <input type="email" id="signup-email" placeholder="your email" name="email" />
+    </label>
+    <label for="signup-password">Password
+      <input type="text" id="signup-password" placeholder="your pass" name="password" />
+    </label>
+    <label for="signup-address">Address
+      <input type="text" id="signup-address" placeholder="adress" name="address" />
+    </label>
+    <label for="phone">Phone
+      <input type="text" id="phone" placeholder="phone" name="phone" />
+    </label>
+    <label for="signup-zipcode">Zipcode
+      <input type="text" id="signup-zipcode" placeholder="zipcode" name="zipcode" />
+    </label>
+    <label for="signup-avatar">Avatar URL
+      <input type="text" id="signup-avatar" placeholder="avatar" name="avatar" />
+    </label>
+    <label for="signup-gender">Gender
+      <select id="signup-gender" name="gender">
+        <option value="MALE">Male</option>
+        <option value="FEMALE">Female</option>
+        <option value="OTHER">Other</option>
+      </select>
+    </label>
+    <button type="submit" id="signup-button">Sign up</button>
+  </form>
+
+  <form action="" class="signIn">
+    <h1>Please Sign In To Enter</h1>
+    <label for="signin-email">Email
+      <input type="email" id="signin-email" placeholder="your email" name="email" />
+    </label>
+    <label for="signin-password">Password
+      <input type="text" id="signin-password" placeholder="your pass" name="password" />
+    </label>
+    <button type="submit" id="signin-button">Sign</button>
+  </form>
+</main>
+
+
+    <footer>
+      <p>All Rights Reserved &copy; STEP-RAILWAY 2024</p>
+    </footer>
+
+    <script src="./signUp.js"></script>
+  </body>
+</html>

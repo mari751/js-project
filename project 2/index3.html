@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./headerFooter.css">
+    <link rel="stylesheet" href="./style3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+          <a href="./index.html" style="display: flex; align-items: center; gap: 10px; ">
+            <img src="./images/train-track.png" alt="">
+            <h1>STEP-RAILWAY</h1>            
+          </a>
+        </div>
+        <p>Welcome To STEP-RAILWAY!</p>
+        <div class="signUp-container">
+            <button id="mode-toggle">Toggle Dark Mode</button>
+                        <a href="./index6.html">
+                <button>Search Ticket</button>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="main1">
+            <h1>Fill out your info</h1>
+            <div id="picked-ticket"></div>
+            <form>
+                <div class="form1">
+                    <div id="contact-info">
+                        <h2>Contact information.</h2>
+                        <div class="contact-inputs">
+                            <input type="email" name="email" placeholder="Email" id="email-input" required>
+                            <input type="text"  name="phoneNumber" placeholder="Phone number" id="phone-input" required>                    
+                        </div>
+                    </div>
+                    <div id="passenger-info">
+                        <h2>Passenger information.</h2>
+                        <div class="passenger-inputs" id="passenger-inputs">
+                            <div id="vagonModal" class="modal" style="display:none;">
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <h4 style="font-size: 20px; color: white; font-family: gravitas;">Select Vagon</h4">
+                                    <div class="vagon-options"></div>
+                                </div>
+                            </div>
+
+                                <div id="seatModal" class="modal" style="display:none;">
+                                    <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                        <h2 style="color: white; font-family: gravitas;">Select Seat</h2>
+                                        <div class="seat-options">
+                                            <div id="seat-option1"></div>
+                                            <div id="seat-option2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>            
+                </div>
+                <div class="includes">
+                    <div class="personal-items">
+                        <i class="fa-solid fa-suitcase"></i>
+                        <div>
+                            <h4>Personal Items</h4>
+                            <p>personal items include small purses and briefcases.</p>
+                            <i class="fa-solid fa-check" style="font-size: 15px; border: none; padding: 10px;"></i>
+                        </div>
+                    </div>
+
+                    <div class="carry-on">
+                        <i class="fa-solid fa-cart-flatbed-suitcase"></i>
+                        <div>
+                            <h4>Carry-ons</h4>
+                            <p>This includes backpacks.</p>
+                            <i class="fa-solid fa-check" style="font-size: 15px; border: none; padding: 10px;"></i>
+                        </div>
+                    </div>
+
+                    <div class="large-bags">
+                        <i class="fa-solid fa-suitcase-rolling"></i>
+                        <div>
+                            <h4>Large bags</h4>
+                            <p>large bags include suitcases and big backpacks.</p>
+                            <i class="fa-solid fa-x" style="font-size: 15px; border: none; padding: 10px;"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="main2">
+                <h2>Price Details</h2>
+                <div class="price">
+                    <div id="categories">
+                        <h4>seat</h4>
+                        <h4>price</h4>
+                    </div>
+                    <div id="chosenSeats">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="total">
+                        <p>total: </p>
+                        <p id="0"></p>
+                    </div>
+                    <button id="proceed-button" type="submit">Proceed to Payment</button>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>All Rights Reserved &copy; STEP-RAILWAY 2024</p>
+    </footer>
+
+
+    <script src="./script3.js"></script>
+</body>
+</html>

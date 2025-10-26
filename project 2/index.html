@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Train Booking</title>
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./headerFooter.css">
+</head>
+<body class="body1">
+    <header>
+        <div class="logo-container">
+            <div class="image-wrapper">
+                <img src="./images/train-track.png" alt="Train">
+            </div>
+            <h1>STEP-RAILWAY</h1>
+        </div>
+        <p>Welcome To STEP-RAILWAY!</p>
+        <div class="signUp-container">
+            <button id="mode-toggle">Toggle Dark Mode</button>
+            <a href="./index6.html">
+                <button>Search Ticket</button>
+            </a>
+        </div>
+    </header>
+
+    <main class="main1">
+        <div class="main-first">
+            <div id="app">
+                <div class="booking-box">
+                    <h2>Rent Train Tickets</h2>
+                    <form id="bookingForm">
+                    <div class="select-stationFrom">
+                        <label for="fromStation">From:</label>
+                        <select id="fromStation" required>
+                        <option value="" selected disabled>Select station</option>
+                        </select>
+                    </div>
+
+                    <div class="select-stationTo">
+                        <label for="toStation">To:</label>
+                        <select id="toStation">
+                        <option value="" selected disabled>Select station</option>
+                        </select>
+                    </div>
+
+                    <div class="select-date">
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" required>
+                    </div>
+
+                    <div class="select-passengers">
+                        <label for="passengers">Passengers:</label>
+                        <input type="number" id="passengers" min="1" value="1">
+                    </div>
+                        <button type="submit" class="searchButton">Search Trains</button>
+                    </form>
+                </div>
+            </div>
+            <img src="./images/Pastel Pink Travel Dream.png" alt="pink suitcase" id="pink-suitcase">
+        </div>
+        <div class="main-second">
+            <img src="./images/steam-train-concept-illustration_114360-12168.jpg" alt="" id="train-img">
+            <div class="info-list">
+                <h3 class="info-title">We Are 100% Safe!</h3>
+                <ul class="info-ul">
+                    <li class="info-item">zero accidents</li>
+                    <li class="info-item">special safety seats</li>
+                    <li class="info-item">trusted drivers</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>All Rights Reserved &copy; STEP-RAILWAY 2024</p>
+    </footer>
+
+
+
+<script src="./script.js"></script>
+</body>
+</html>

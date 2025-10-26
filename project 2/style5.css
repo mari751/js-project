@@ -1,0 +1,144 @@
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: #f7f8fa;
+  margin: 0;
+  color: #222;
+}
+
+.container {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* --- HEADER --- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.action-btn {
+  background: #0033cc;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.action-btn:hover {
+  background: #002699;
+}
+
+/* --- SUCCESS BOX --- */
+.success-section {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 25px;
+  padding: 30px;
+  text-align: center;
+}
+
+.success-icon {
+  font-size: 40px;
+  color: #0ba360;
+  border: 3px solid #0ba360;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  line-height: 60px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.ticket-card {
+  background: #fafafa;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 25px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* --- HEADER INSIDE CARD --- */
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.ticket-left p {
+  margin: 4px 0;
+  font-size: 0.9rem;
+}
+
+.ticket-logo .logo-placeholder {
+  width: 70px;
+  height: 70px;
+}
+
+/* --- FLEX SECTIONS (placeholders) --- */
+.train-info,
+.payment-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 10px 0;
+}
+
+.passenger-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.train-info div,
+.passenger-info div,
+.payment-info div {
+  flex: 1 1 45%;
+  background: var(--white);
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.03);
+}
+
+/* --- NOTE --- */
+.note {
+  font-size: 0.85rem;
+  color: #b30000;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.train-card {
+  display: flex;
+  gap: 100px;
+  background-color: var(--white);
+  color: var(--primary-dark);
+  padding: 40px;
+  border-radius: 10px;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.train-info, .route-from, .route-to {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0px 20px;
+  border-left: 1px solid var(--primary-dark);
+  border-right: 1px solid var(--primary-dark);
+}/*# sourceMappingURL=style5.css.map */

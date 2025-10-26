@@ -1,0 +1,336 @@
+:root {
+  --primary: #e5b9e7;
+  --primary-dark: #bf82c1;
+  --hover: #ff67f7;
+  --white: #ffffff;
+  --text: #835279;
+  --bg: #ffeffe;
+  --darkDark: #835279;
+  --footer: #a64d9e;
+  --header: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --border: #bd97bf;
+  --highlight-bg: rgb(255, 229, 253);
+}
+body.dark-mode {
+  --bg: #000000;
+  --primary: #482b5f;
+  --primary-dark: #2f2739;
+  --hover: #52116b;
+  --white: #e2e2e2;
+  --text: #382855;
+  --footer: #3c204e;
+  --header: #d6d6d6;
+  --shadow: rgba(255, 255, 255, 0.05);
+  --border: #3a2d42;
+  --highlight-bg: #c8c8c8;
+  --darkDark: #372743;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+main {
+  padding: 20px 100px;
+  display: flex;
+  justify-content: center;
+}
+
+main h1,
+.main2 h2 {
+  color: var(--darkDark);
+  padding-top: 70px;
+  padding-bottom: 20px;
+  font-family: gravitas, sans-serif;
+}
+
+.train-card {
+  display: flex;
+  gap: 100px;
+  background-color: var(--white);
+  color: var(--primary-dark);
+  padding: 40px;
+  box-shadow: 0 0 10px var(--shadow);
+  border-radius: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#picked-ticket {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding-bottom: 10px;
+}
+
+#contact-info {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+#contact-info h2 {
+  color: var(--darkDark);
+  font-family: gravitas, sans-serif;
+}
+
+.form1 {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--shadow);
+  width: 90%;
+  padding: 40px;
+  gap: 30px;
+  transition: background-color 0.3s;
+}
+
+.contact-inputs {
+  display: flex;
+  gap: 20px;
+}
+
+.contact-inputs input {
+  width: 90%;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  border: 3px solid var(--border);
+  color: var(--text);
+  background-color: var(--white);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.price {
+  background-color: var(--white);
+  box-shadow: 0 0 10px var(--shadow);
+  border-radius: 10px;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 5px;
+}
+
+.passenger-info1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 40px;
+}
+
+#passenger-info {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  border-top: 5px dashed var(--border);
+  gap: 20px;
+}
+
+#passenger-info h2 {
+  color: var(--darkDark);
+  font-family: gravitas, sans-serif;
+}
+
+.passenger-details input {
+  width: 20%;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  border: 3px solid var(--border);
+  color: var(--text);
+  background-color: var(--white);
+}
+
+.passenger-info1 h3 {
+  color: var(--darkDark);
+  font-family: gravitas, sans-serif;
+  font-size: 15px;
+}
+
+.passenger-details {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.seat-num {
+  padding: 15px 25px;
+  border-radius: 10px;
+  cursor: auto !important;
+  background-color: var(--white);
+  color: var(--text);
+}
+
+.seat-button {
+  padding: 15px 30px;
+  border-radius: 10px;
+  background-color: var(--primary-dark);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+}
+
+.includes {
+  display: flex;
+  gap: 20px;
+  background-color: var(--white);
+  border-radius: 10px;
+  width: 90%;
+  padding: 20px;
+  box-shadow: 0 0 10px var(--shadow);
+  padding-top: 50px;
+}
+
+.personal-items,
+.carry-on,
+.large-bags {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--white);
+  color: var(--text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+i {
+  color: var(--primary-dark);
+  font-size: 40px;
+  border: 1px solid var(--primary-dark);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.personal-items:hover,
+.carry-on:hover,
+.large-bags:hover {
+  background-color: var(--primary-dark);
+  color: var(--white);
+}
+
+.personal-items:hover i,
+.carry-on:hover i,
+.large-bags:hover i {
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+
+.vagon-options button {
+  color: var(--text);
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--primary);
+}
+
+#vagonModal {
+  background-color: var(--darkDark);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 40px;
+  max-width: 350px;
+  color: var(--white);
+}
+
+#seatModal {
+  background-color: var(--primary);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 40px;
+  width: 380px;
+  color: var(--text);
+}
+
+.seat-options {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  gap: 40px;
+}
+
+.seat-options button {
+  font-size: 16px;
+  width: 60px;
+  border: none;
+  border-radius: 10px;
+  margin: 1px;
+  background-color: var(--white);
+  color: var(--text);
+}
+
+#seat-option1 {
+  border-left: var(--primary-dark) 5px solid;
+  border-bottom: var(--primary-dark) 30px solid;
+  border-top: var(--primary-dark) 30px solid;
+}
+
+#seat-option2 {
+  border-right: var(--primary-dark) 5px solid;
+  border-bottom: var(--primary-dark) 30px solid;
+  border-top: var(--primary-dark) 30px solid;
+}
+
+.seat-button-option.selected {
+  background-color: var(--hover);
+  color: var(--white);
+}
+
+
+#categories {
+  display: flex;
+  gap: 40px;
+}
+
+#categories h4 {
+  color: var(--darkDark);
+  font-family: gravitas, sans-serif;
+  font-size: 18px;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  color: var(--darkDark);
+  background-color: var(--highlight-bg);
+  border: 1px solid var(--border);
+  padding: 3px;
+  font-size: 16px;
+  width: 90%;
+}
+
+#proceed-button {
+  background-color: var(--primary-dark);
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  padding: 15px 30px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#proceed-button:hover {
+  background-color: var(--hover);
+}
+
+.seat-row {
+  display: flex;
+  gap: 120px;
+  width: max-content;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

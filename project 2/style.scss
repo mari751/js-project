@@ -1,0 +1,144 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.body1 {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.booking-box {
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  border-radius: 10px;
+  padding: 15px 50px;
+  width: 90%;
+  margin: 50px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+main {
+  padding: 20px;
+}
+
+.main-first {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding: 0px 40px;
+  align-items: center;
+}
+
+.main-first img {
+  height: 600px;
+}
+
+#bookingForm {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  width: 300px;
+}
+
+.booking-box h2 {
+  font-family: gravitas;
+  color: var(--primary);
+}
+
+.searchButton {
+  height: 40px;
+  border-radius: 10px;
+  font-family: gravitas;
+}
+
+.select-stationFrom,
+.select-stationTo,
+.select-date,
+.select-passengers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.select-date input,
+.select-passengers input,
+.select-stationFrom select,
+.select-stationTo select {
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: var(--accent);
+  border: 1px solid var(--primary);
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: var(--white);
+}
+
+.select-date label,
+.select-passengers label,
+.select-stationFrom label,
+.select-stationTo label {
+  color: var(--primary-dark);
+  font-size: 20px;
+}
+
+.main-second {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  background-color: var(--white);
+  border: none;
+  border-radius: 30px;
+  padding: 50px 20px;
+  width: 90%;
+}
+
+.info-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: var(--primary);
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 10px;
+  border: 3px dashed var(--primary);
+}
+
+.info-ul li {
+  font-size: 20px;
+  font-family: gravitas;
+  list-style-type: disc;
+}
+
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  text-align: center;
+}
+
+.main1 {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+
+.info-title {
+  font-family: gravitas;
+  color: var(--primary);
+  font-size: 40px;
+}
+
+.main-second img {
+  height: 50%;
+  border-radius: 10px;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./headerFooter.css">
+    <link rel="stylesheet" href="./style5.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+          <a href="./index.html" style="display: flex; align-items: center; gap: 10px; ">
+            <img src="./images/train-track.png" alt="">
+            <h1>STEP-RAILWAY</h1>            
+          </a>
+        </div>
+        <p>Welcome To STEP-RAILWAY!</p>
+        <div class="signUp-container">
+            <button id="mode-toggle">Toggle Dark Mode</button>
+                        <a href="./index6.html">
+                <button>Search Ticket</button>
+            </a>
+        </div>
+    </header>
+
+    <section class="success-section">
+      <div class="success-icon">✔</div>
+      <h2>Payment Successful</h2>
+
+      <div class="ticket-card">
+        <div class="ticket-header">
+            <div class="ticket-left">
+                <h3>Step Railway</h3>
+                <p id="ticket-id"></p>
+                <p id="payDay"></p>
+            </div>
+            <div class="ticket-logo">
+                <img src="./images/train-track.png" alt="" class="logo-placeholder">
+            </div>
+            </div>
+
+            <div id="train-info">
+
+            </div>
+
+            <div class="passenger-info">
+                <h2>Contact information</h2>
+                <div class="info-container">
+                    <div>
+                        <p id="email-info"></p>
+                    </div>
+                    <div>
+                        <p id="phone-info"></p>
+                    </div>
+                </div>
+            <div class="passengers-info">
+                <div>
+                    <h3>მგზავრები:</h3>
+                </div>
+                <!-- <div class="passengers-list-div"> -->
+                    <div id="passengers-list"></div>
+                <!-- </div> -->
+              </div>
+
+            <div class="payment-info">
+            <!-- payment method, total, etc. -->
+            </div>
+
+            <p class="note">
+            ბილეთის დაბრუნება შესაძლებელია მგზავრობის დაწყებამდე არაუგვიანეს 24 საათისა.
+            </p>
+        </div>
+    </section>
+
+    <script src="./script5.js"></script>
+</body>
+</html>
